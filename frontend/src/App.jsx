@@ -23,6 +23,7 @@ import ResumeBuilder from './pages/student/ResumeBuilder';
 import DiscussionForum from './pages/student/DiscussionForum';
 import AnalyticsDashboard from './pages/student/AnalyticsDashboard';
 
+import LandingPage from './pages/LandingPage';
 import Home from './pages/Home';
 import Referrals from './pages/Referrals';
 import Dashboard from './pages/Dashboard';
@@ -51,16 +52,17 @@ function App() {
 
       <Routes>
 
-        <Route path='/' element={authUser ? <Home /> : <Navigate to='/login' />} />
+        <Route path='/' element={authUser ? <Navigate to='/home' /> : <LandingPage />} />
+        <Route path='/home' element={authUser ? <Home /> : <Navigate to='/login' />} />
         <Route path='/profile' element={authUser ? <Profile /> : <Navigate to='/login' />} />
         <Route path='/discussion-forum' element={authUser ? <DiscussionForum /> : <Navigate to='/login' />} />
         <Route path='/dashboard' element={authUser ? <Dashboard /> : <Navigate to='/login' />} />
-        <Route path='/login' element={authUser ? <Navigate to='/' /> : <Login />} />
-        <Route path='/signup' element={authUser ? <Navigate to='/' /> : <Signup />} />
-        <Route path='/analytics' element={<AnalyticsDashboard />} />
-        <Route path='/referrals' element={<Referrals />} />
-        <Route path='/resumebuilder' element={<ResumeBuilder />} />
-        <Route path='/alumni' element={<Alumni />} />
+        <Route path='/login' element={authUser ? <Navigate to='/home' /> : <Login />} />
+        <Route path='/signup' element={authUser ? <Navigate to='/home' /> : <Signup />} />
+        <Route path='/analytics' element={authUser ? <AnalyticsDashboard /> : <Navigate to='/login' />} />
+        <Route path='/referrals' element={authUser ? <Referrals /> : <Navigate to='/login' />} />
+        <Route path='/resumebuilder' element={authUser ? <ResumeBuilder /> : <Navigate to='/login' />} />
+        <Route path='/alumni' element={authUser ? <Alumni /> : <Navigate to='/login' />} />
         {!authUser && <Route path='/reset-password/:resetToken' element={<ResetPasswordPage />} />}
         <Route
           path="/admin/jobs"
@@ -79,7 +81,7 @@ function App() {
           element={
             authUser
               ? <Applications />
-              : <Navigate to="/login" replace />
+              : <Navigate to="/login" />
           }
         />
         <Route
@@ -87,7 +89,7 @@ function App() {
           element={
             authUser
               ? <SavedApplications />
-              : <Navigate to="/login" replace />
+              : <Navigate to="/login" />
           }
         />
         <Route

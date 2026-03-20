@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
+import { BROCHURE_LINK } from "../constants/links";
 
 const Home = () => {
   return (
@@ -106,7 +107,7 @@ const Home = () => {
           </p>
           <div className="text-right">
             <a
-              href="https://www.iitbhilai.ac.in/index.php?pid=PlacementReport2023_2024"
+              href={BROCHURE_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#13665b] dark:text-teal-400 underline text-sm font-semibold hover:text-[#0fa18e] transition"
