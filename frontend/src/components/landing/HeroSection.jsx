@@ -11,7 +11,7 @@ const HeroSection = ({ onLoginClick, onSignupClick }) => {
           alt="Campus Background"
           className="w-full h-full object-cover opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/90 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between text-white">
@@ -19,7 +19,7 @@ const HeroSection = ({ onLoginClick, onSignupClick }) => {
         <div className="md:w-3/5 space-y-6">
           <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight">
             A one stop portal for <br />
-            <span className="text-blue-300">Placements & Internships</span>
+            <span className="text-emerald-300">Placements & Internships</span>
           </h2>
           <p className="text-lg lg:text-xl text-gray-200 max-w-2xl font-light">
             Empowering students and connecting industry with talent at IIT Bhilai.
@@ -28,7 +28,7 @@ const HeroSection = ({ onLoginClick, onSignupClick }) => {
           <div className="flex space-x-4 pt-4">
             <button
               onClick={onSignupClick}
-              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold text-lg shadow-xl transform transition hover:-translate-y-1"
+              className="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-bold text-lg shadow-xl transform transition hover:-translate-y-1"
             >
               Get Started
             </button>
@@ -36,7 +36,7 @@ const HeroSection = ({ onLoginClick, onSignupClick }) => {
               href={BROCHURE_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 border-2 border-white hover:bg-white hover:text-blue-900 rounded-lg font-bold text-lg transition duration-300 flex items-center justify-center"
+              className="px-8 py-3 border-2 border-white hover:bg-white hover:text-emerald-900 rounded-lg font-bold text-lg transition duration-300 flex items-center justify-center"
             >
               Download Brochure
             </a>
@@ -48,13 +48,13 @@ const HeroSection = ({ onLoginClick, onSignupClick }) => {
           <div className="flex flex-col space-y-4">
             <button 
               onClick={onLoginClick}
-              className="w-full py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-50 transition shadow-lg flex items-center justify-center space-x-3 group"
+              className="w-full py-4 bg-white text-emerald-900 font-bold rounded-xl hover:bg-emerald-50 transition shadow-lg flex items-center justify-center space-x-3 group"
             >
-              <span className="text-blue-900 group-hover:scale-110 transition">Student Login</span>
+              <span className="text-emerald-900 group-hover:scale-110 transition">Student Login</span>
             </button>
             <button 
               onClick={onLoginClick}
-              className="w-full py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition shadow-lg flex items-center justify-center space-x-3"
+              className="w-full py-4 bg-emerald-600 text-white font-bold rounded-xl hover:bg-emerald-700 transition shadow-lg flex items-center justify-center space-x-3"
             >
               <span>Recruiter Login</span>
             </button>

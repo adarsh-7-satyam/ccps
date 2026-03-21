@@ -23,7 +23,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-blue-100 selection:text-blue-900">
+    <div className="min-h-screen bg-white font-sans selection:bg-emerald-100 selection:text-emerald-900">
       {/* Navbar Section */}
       <Navbar />
 

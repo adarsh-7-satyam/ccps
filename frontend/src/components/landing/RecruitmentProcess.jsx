@@ -23,8 +23,8 @@ const RecruitmentProcess = () => {
     <section id="process" className="py-20 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-widest text-blue-900">Recruitment Process</h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto" />
+          <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-widest text-emerald-900">Recruitment Process</h2>
+          <div className="w-24 h-1 bg-emerald-600 mx-auto" />
           <p className="text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
             A simplified, efficient 15-step process designed for the benefit of both students and recruiters.
           </p>
@@ -33,8 +33,8 @@ const RecruitmentProcess = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map((step, index) => (
             <div key={index} className="relative group">
-              <div className="bg-white border border-gray-200 p-5 rounded-2xl shadow-sm hover:shadow-md transition duration-300 h-full flex flex-row items-center text-left space-x-5 transform hover:scale-[1.02] hover:border-blue-200">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-900 font-bold text-lg shrink-0 shadow-inner">
+              <div className="bg-white border border-gray-200 p-5 rounded-2xl shadow-sm hover:shadow-md transition duration-300 h-full flex flex-row items-center text-left space-x-5 transform hover:scale-[1.02] hover:border-emerald-200">
+                <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-900 font-bold text-lg shrink-0 shadow-inner">
                   {index + 1}
                 </div>
                 <p className="text-sm font-medium text-gray-700 leading-snug">

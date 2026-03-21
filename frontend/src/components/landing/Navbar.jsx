@@ -14,9 +14,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
-            <img src="/images/logo.png" alt="IIT Bhilai Logo" className="w-12 h-12 object-contain" />
+            <img src="/images/CCPS.png" alt="IIT Bhilai Logo" className="w-12 h-12 object-contain" />
             <div>
-              <h1 className="text-xl font-bold text-blue-900 leading-tight">Centre for Career Planning and Services</h1>
+              <h1 className="text-xl font-bold text-emerald-900 leading-tight">Centre for Career Planning and Services</h1>
               <p className="text-sm font-semibold text-gray-600 uppercase tracking-wider">IIT Bhilai</p>
             </div>
           </div>
@@ -25,13 +25,13 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-900 font-medium transition-colors duration-200"
+                className="text-gray-700 hover:text-emerald-900 font-medium transition-colors duration-200"
               >
                 {link.name}
               </a>
             ))}
           </div>
-          <div className="md:hidden text-blue-900 cursor-pointer">
+          <div className="md:hidden text-emerald-900 cursor-pointer">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>

@@ -15,7 +15,7 @@ const WhyIIT = () => {
       title: 'World Class Curriculum and Faculty',
       content: 'IIT Bhilai has best-in-class faculty not only for their academic expertise but also for their global experience and insight. The institute provides a comprehensive yet flexible learning environment, with stress over project-based and hands-on teaching and liberal arts and creative arts to impart a more holistic education.',
       icon: GraduationCap,
-      iconColor: 'text-blue-400',
+      iconColor: 'text-emerald-400',
     },
     {
       title: 'Rigorous Selection',
@@ -44,12 +44,12 @@ const WhyIIT = () => {
   }, [selectedPoint]);
 
   return (
-    <section id="why-recruit" className="py-20 bg-blue-900 text-white relative">
+    <section id="why-recruit" className="py-20 bg-emerald-900 text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-widest">Why Recruit at IIT Bhilai?</h2>
-          <div className="w-24 h-1 bg-blue-400 mx-auto" />
-          <p className="text-blue-100 max-w-3xl mx-auto font-light leading-relaxed">
+          <div className="w-24 h-1 bg-emerald-400 mx-auto" />
+          <p className="text-emerald-100 max-w-3xl mx-auto font-light leading-relaxed">
             IIT Bhilai stands for academic excellence, innovation, and global leadership. Our students are trained to be the best in their respective fields.
           </p>
         </div>
@@ -59,12 +59,12 @@ const WhyIIT = () => {
             <div key={index} className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition shadow-lg flex flex-col transform hover:scale-[1.02]">
               <div className="space-y-4">
                 <point.icon className={`w-10 h-10 ${point.iconColor}`} strokeWidth={1.5} />
-                <h3 className="text-lg font-bold text-blue-300 leading-tight">
+                <h3 className="text-lg font-bold text-emerald-300 leading-tight">
                   {point.title}
                 </h3>
                 
                 {/* Truncation Logic: Increased to 5 lines and removed justify-between to keep button close to text */}
-                <p className="text-sm text-blue-50/70 font-light leading-relaxed line-clamp-5">
+                <p className="text-sm text-emerald-50/70 font-light leading-relaxed line-clamp-5">
                   {point.content}
                 </p>
               </div>
@@ -72,7 +72,7 @@ const WhyIIT = () => {
               <div className="mt-auto pt-6">
                 <button 
                   onClick={() => setSelectedPoint(point)}
-                  className="text-sm font-bold text-blue-400 hover:text-white transition-colors flex items-center group"
+                  className="text-sm font-bold text-emerald-400 hover:text-white transition-colors flex items-center group"
                 >
                   Know More
                   <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,7 +98,7 @@ const WhyIIT = () => {
             {/* Close Button */}
             <button 
               onClick={() => setSelectedPoint(null)}
-              className="absolute top-6 right-6 text-gray-400 hover:text-blue-900 transition-colors"
+              className="absolute top-6 right-6 text-gray-400 hover:text-emerald-900 transition-colors"
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -108,7 +108,7 @@ const WhyIIT = () => {
             <div className="space-y-6">
               <div className="flex items-center space-x-4 border-b border-gray-100 pb-6">
                 <selectedPoint.icon className={`w-12 h-12 ${selectedPoint.iconColor.replace('text-', 'text-opacity-80 text-')}`} strokeWidth={1.5} />
-                <h3 className="text-2xl font-bold text-blue-900 leading-tight">
+                <h3 className="text-2xl font-bold text-emerald-900 leading-tight">
                   {selectedPoint.title}
                 </h3>
               </div>
@@ -120,7 +120,7 @@ const WhyIIT = () => {
               <div className="pt-4">
                 <button 
                   onClick={() => setSelectedPoint(null)}
-                  className="px-8 py-3 bg-blue-900 text-white font-bold rounded-lg hover:bg-blue-800 transition shadow-lg"
+                  className="px-8 py-3 bg-emerald-900 text-white font-bold rounded-lg hover:bg-emerald-800 transition shadow-lg"
                 >
                   Close
                 </button>

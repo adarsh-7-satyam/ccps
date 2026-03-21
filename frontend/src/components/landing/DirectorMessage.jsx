@@ -28,20 +28,20 @@ const DirectorMessage = () => {
         <div className="flex flex-col md:flex-row items-start gap-16">
           <div className="md:w-1/3 w-full">
             <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-blue-900 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
+              <div className="absolute -inset-2 bg-gradient-to-r from-emerald-900 to-emerald-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
               <img
                 src="/images/Director.png"
                 alt="Director"
                 className="relative rounded-2xl shadow-2xl transition duration-500 w-full"
               />
               <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-white/20">
-                <p className="text-blue-900 font-bold text-lg">Prof. Rajiv Prakash</p>
+                <p className="text-emerald-900 font-bold text-lg">Prof. Rajiv Prakash</p>
                 <p className="text-gray-600 text-sm italic font-medium">Director, IIT Bhilai</p>
               </div>
             </div>
           </div>
           <div className="md:w-2/3 space-y-6">
-            <h2 className="text-3xl font-bold text-blue-900 italic font-montserrat tracking-tight">
+            <h2 className="text-3xl font-bold text-emerald-900 italic font-montserrat tracking-tight">
               "Building the future leaders of the technology world."
             </h2>
             <div className="space-y-4 text-gray-700 leading-relaxed font-light text-lg">
@@ -50,7 +50,7 @@ const DirectorMessage = () => {
             </div>
             <button 
               onClick={() => setIsModalOpen(true)}
-              className="px-6 py-2 border-b-2 border-blue-900 text-blue-900 font-bold hover:bg-blue-900 hover:text-white transition duration-300"
+              className="px-6 py-2 border-b-2 border-emerald-900 text-emerald-900 font-bold hover:bg-emerald-900 hover:text-white transition duration-300"
             >
               Read Full Message
             </button>
@@ -72,7 +72,7 @@ const DirectorMessage = () => {
             {/* Close Button */}
             <button 
               onClick={() => setIsModalOpen(false)}
-              className="absolute top-6 right-6 text-gray-400 hover:text-blue-900 transition-colors"
+              className="absolute top-6 right-6 text-gray-400 hover:text-emerald-900 transition-colors"
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -81,13 +81,13 @@ const DirectorMessage = () => {
 
             <div className="space-y-6">
               <div className="border-b border-gray-100 pb-6">
-                <h3 className="text-2xl font-bold text-blue-900">Director's Message</h3>
+                <h3 className="text-2xl font-bold text-emerald-900">Director's Message</h3>
                 <p className="text-gray-500">Prof. Rajiv Prakash</p>
               </div>
               
               <div className="space-y-4 text-gray-700 leading-relaxed text-lg font-light">
                 {fullMessage.map((paragraph, index) => (
-                  <p key={index} className={index === 3 ? "font-semibold text-blue-900 pt-4" : ""}>
+                  <p key={index} className={index === 3 ? "font-semibold text-emerald-900 pt-4" : ""}>
                     {paragraph}
                   </p>
                 ))}
